@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradiant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/idusername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="اسم المستخدم"
+        android:gravity="right"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="البريد الالكتروني"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/idusername"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/idpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="كلمة المرور"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/idemail" />
+
+    <Button
+        android:id="@+id/edsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@drawable/submitshape"
+        android:text="انشاء حساب"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idpass" />
+
+
+    <TextView
+        android:id="@+id/txtlogininfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لديك حساب؟ سجل الدخول"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/edsubmit"
+        app:layout_constraintStart_toStartOf="@+id/edsubmit"
+        app:layout_constraintTop_toBottomOf="@+id/edsubmit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
